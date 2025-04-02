@@ -1,0 +1,14 @@
+# requirements.txt
+
+python-dotenv
+groq
+pandas
+numpy
+python-dotenv
+pyyaml
+flask
+markdown
+
+# python -m venv gptenv
+# gptenv\scripts\activate
+# pip install -r requirements.txt 
