@@ -24,24 +24,38 @@ Make sure the following are installed on your system:
 
 ## 🛠️ Setup Instructions
 
-```bash
-# Step 1: Create Conda environment
-conda create -n gptenv python=3.11 -y
 
+# Step 1: Create Conda environment
+
+```bash
+conda create -n gptenv python=3.11 -y
+```
 # Step 2: Activate the environment
+
+```bash
 conda activate gptenv
+```
 
 # Step 3: Clone the repository
+
+```bash
 git clone https://github.com/satendraSisodiya/sasgpt.git
 cd sasgpt
+```
 
 # Step 4: Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
 # Step 5: Create a .env file (see below)
 
 # Step 6: Run the application
+
+```bash
 python app.py
+```
 
 ---
 
@@ -72,7 +86,7 @@ Create a `.env` file in the root directory and add the following:
 
 ```env
 GROQ_API_KEY=your_groq_api_key_here
-
+```
 ⚠️ Replace your_groq_api_key_here with your actual GROQ API key.
 
 ---
@@ -86,17 +100,20 @@ Contributions are welcome! If you'd like to enhance the application or fix issue
 
   ```bash
   git checkout -b feature-name
-
+  ```
+  
 - Commit your changes:
 
   ```bash
   git commit -m 'Add new feature'
-
+  ```
+  
 - Push to the branch:
 
   ```bash
   git push origin feature-name
-
+  ```
+  
 - Open a pull request.
 
 ---
