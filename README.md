@@ -1,48 +1,119 @@
+# SASGPT Chat Application
 
-# **SASGPT Chat Application**
+**SASGPT** is an AI-powered chat application developed as a final-year project at **BKIT**. It enables users to interact with a conversational AI model, offering concise answers for general queries and detailed explanations for programming-related questions.
 
-SASGPT is an AI-powered chat application that allows users to interact with a conversational AI model. This application provides concise answers to user queries and offers detailed explanations when requested.
+---
 
-### **Features:**
+## 🚀 Features
 
-- User-friendly chat interface
-- Concise responses for general queries
-- Detailed explanations for programming-related questions
-- Code block support with syntax highlighting
+- **User-Friendly Interface** – Seamless interaction with the AI.
+- **Concise Responses** – Short answers for general questions.
+- **Detailed Explanations** – In-depth output for technical queries.
+- **Code Block Support** – Syntax-highlighted code in responses.
 
-### **Prerequisites:**
+---
 
-Before you begin, ensure you have the following installed:
+## 📦 Prerequisites
 
-- Anaconda or Miniconda
-- Python 3.11
+Make sure the following are installed on your system:
 
-### **Setup Instructions:**
+- [Anaconda](https://www.anaconda.com/) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+- Python 3.11+
 
-1. Create a Conda Environment:
-   - Run the following command to create a new Conda environment named `gptenv` with Python 3.11:
-     ```
-     conda create -n gptenv python==3.11 -y
-     ```
+---
 
-2. Activate the Environment:
-   - Activate the newly created environment with:
-     ```
-     conda activate gptenv
-     ```
+## 🛠️ Setup Instructions
 
-3. Install Requirements:
-   - Install the necessary dependencies using pip:
-     ```
-     pip install -r requirements.txt
-     ```
+```bash
+# Step 1: Create Conda environment
+conda create -n gptenv python=3.11 -y
 
-4. Run the Application:
-   - Start the application by running:
-     ```
-     python app.py
-     ```
+# Step 2: Activate the environment
+conda activate gptenv
+
+# Step 3: Clone the repository
+git clone https://github.com/satendraSisodiya/sasgpt.git
+cd sasgpt
+
+# Step 4: Install dependencies
+pip install -r requirements.txt
+
+# Step 5: Create a .env file (see below)
+
+# Step 6: Run the application
+python app.py
+
+---
+
+## 📁 Project Structure
+
+sasgpt/
+├── app/                 # Main application code
+├── config/              # Configuration files
+├── logger/              # Logging utilities
+├── app.py               # Application entry point
+├── requirements.txt     # Python dependencies
+└── README.md            # Project documentation
+
+---
+
+## 🧰 Technologies Used
+
+- **Python 3.11**: Core programming language.
+- **GROQ API**: Used for processing user queries with powerful AI capabilities.
+- **Flask**: Web framework for handling HTTP requests and responses.
+- **Other Dependencies**: Listed in `requirements.txt`.
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env` file in the root directory and add the following:
+
+```env
+GROQ_API_KEY=your_groq_api_key_here
+
+⚠️ Replace your_groq_api_key_here with your actual GROQ API key.
+
+---
+
+## 🤝 Contribution
+
+Contributions are welcome! If you'd like to enhance the application or fix issues:
+
+- Fork the repository.
+- Create a new branch:
+
+  ```bash
+  git checkout -b feature-name
+
+- Commit your changes:
+
+  ```bash
+  git commit -m 'Add new feature'
+
+- Push to the branch:
+
+  ```bash
+  git push origin feature-name
+
+- Open a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 🙌 Acknowledgments
+
+Developed by **Satendra Sisodiya** and team as part of the **final-year project at BKIT**.
+
+---
 
 ### **Usage:**
 
 Once the application is running, open your web browser and navigate to `http://127.0.0.1:5000/` to access the chat interface. You can start asking questions, and the AI will respond based on your input.
+
